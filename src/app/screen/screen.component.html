@@ -1,0 +1,28 @@
+<div class="text">
+  <p *ngIf="loading">Loading...</p>
+</div>
+
+<div *ngIf="!loading" class="search">
+    <input type="search" placeholder="Search a repo" [formControl]="searchField" />
+    <ul *ngIf="repos"class="dropdown">
+        <li *ngFor="let repo of repos">
+          <a [routerLink]="[ '/repo', repo.login ]">
+            <img class="image"  src={{repo.avatar_url}}>
+            {{repo.login}}
+          </a>
+        </li>
+      </ul>
+</div>
+
+<h1 *ngIf="!loading">Language : {{lang}}</h1>
+
+<ul class="contain">
+  <li class="card" *ngFor="let item of results">
+      <a href="{{item.html_url}}">
+          <img src={{item.owner.avatar_url}} />
+          <div>{{ item.owner.login}}</div>
+        </a>
+  </li>
+</ul>
+
+

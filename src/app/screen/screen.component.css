@@ -1,0 +1,45 @@
+input {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    padding: 5px 10px;
+    font-size: 20px; 
+}
+.search{
+    text-align: center;
+    margin: 0 5%;
+}
+
+.dropdown{ 
+    max-height: 200px;
+    overflow-y: scroll;
+    text-align: left;
+    width: 400px;
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    font-size: 20px;
+    border: 1px solid rgb(146, 143, 143);
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.20);
+}
+
+ul {
+    font-size: 15px;
+    margin-left: 0px;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 5%;
+}
+
+li {
+    margin: 10px 5px;
+}
+.image {
+    width: 25px;
+    padding: 0 5px;
+}
+.contain{
+    margin: 0 5%;
+}

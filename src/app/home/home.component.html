@@ -1,0 +1,7 @@
+<div class="contain">
+  <span *ngFor="let name of names">
+    <a class="card"  [routerLink]="[ '/language', name ]">
+      <h2>{{name | uppercase}}</h2>
+    </a>
+  </span>
+</div>

@@ -1,0 +1,23 @@
+
+<ul>
+  <li class="card" *ngFor="let item of results| slice:0:1;">
+    <a href="{{item.html_url}}">
+      <img src={{item.avatar_url}} />
+      <table>
+        <tr class="platform">
+          <td>Login:</td>
+          <td>{{ item.login}}</td>
+        </tr>
+        <tr class="platform">
+          <td>Score:</td>
+          <td>{{item.score}}</td>
+        </tr>
+        <tr>
+          <td>Type:</td>
+          <td>{{item.type}}</td>
+        </tr>
+      </table>
+
+    </a>
+  </li>
+</ul>
